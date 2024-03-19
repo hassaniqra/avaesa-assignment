@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journalism Unveiled</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+        }
+        nav {
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0f0f0;
+        }
+        .hero {
+            background-image: url('./assets/top-view-old-french-newspaper-pieces.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #007bff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .btn-enroll {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .btn-enroll:hover {
+            background-color: #0056b3;
+        }
+        .testimonial {
+            margin-bottom: 40px;
+        }
+        .testimonial blockquote {
+            background-color: #fff;
+            border-left: 5px solid #007bff;
+            padding: 20px;
+            margin: 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .testimonial blockquote p {
+            margin-bottom: 0;
+        }
+        .testimonial blockquote cite {
+            font-style: normal;
+            font-weight: 700;
+            display: block;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#enroll">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to "Journalism Unveiled"</h1>
+            <p>Are you ready to embark on a transformative journey into the heart of journalism?</p>
+            <a href="#enroll" class="btn-enroll">Enroll Now</a>
+        </div>
+    </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Mr. Arun:</h2>
+            <p>A seasoned journalist with decades of experience, Mr. Arun has witnessed the ever-evolving landscape of media and storytelling. From breaking news stories to in-depth investigative reporting, his career has been a testament to the power of journalism in shaping the world we live in.</p>
+        </section>
+        
+        <section id="course">
+            <h2>About the Course:</h2>
+            <p>Join Mr. Arun for a two-week immersive online course designed to equip aspiring journalists with the practical skills and insights needed to thrive in today's fast-paced media industry. Through a combination of interactive lectures, real-world case studies, and hands-on exercises, you'll gain invaluable knowledge that goes beyond the textbooks.</p>
+        </section>
+        
+        <section class="testimonial">
+            <h2>Testimonials:</h2>
+            <blockquote>
+                <p>Mr. Arun's course provided me with the tools and confidence to pursue my dream career in journalism. Highly recommended!</p>
+                <cite>- Emily, Journalism Student</cite>
+            </blockquote>
+            <blockquote>
+                <p>The insights I gained from Mr. Arun's course were invaluable. I now feel prepared to tackle the challenges of the media industry head-on.</p>
+                <cite>- David, Aspiring Journalist</cite>
+            </blockquote>
+        </section>
+        
+        <section id="enroll">
+            <h2>Join Us:</h2>
+            <p>Don't miss this opportunity to learn from the best and unlock your potential as a journalist. Enroll now and embark on a journey that will shape the storyteller in you!</p>
+            <a href="#" class="btn-enroll">Enroll Now</a>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>Contact Us: example@example.com | Phone: 123-456-7890</p>
+    </footer>
+   <script>
+        // JavaScript for smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^=""]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
